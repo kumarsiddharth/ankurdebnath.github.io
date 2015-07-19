@@ -212,6 +212,7 @@ function parallax() {
           center: myLatlng,
           zoom: 17,
           scrollwheel: false,
+          draggable: false,
           mapTypeId: google.maps.MapTypeId.ROADMAP
         }
         var map = new google.maps.Map(mapCanvas, mapOptions)
