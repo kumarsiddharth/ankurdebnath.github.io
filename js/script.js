@@ -205,14 +205,23 @@ function parallax() {
 /*  Google Map
 ------------------------------------------------------*/
 
-    // main directions
-      map = new GMaps({
-        el: '#map', lat: 23.790223, lng: 90.414036, zoom: 13, zoomControl : true, 
-        zoomControlOpt: { style : 'SMALL', position: 'TOP_LEFT' }, panControl : false, scrollwheel: false
-      });
-    // add address markers
-    map.addMarker({ lat: 23.790223, lng: 90.414036, title: 'BD InfoSys',
-      infoWindow: { content: '<p>Building # 2, Plot # 111, Road # 35, Gulshan - 2, Dhaka</p>' } });
+    function initialize() {
+        var mapCanvas = document.getElementById('map');
+        var myLatlng = new google.maps.LatLng(22.5551861,88.3056887);
+        var mapOptions = {
+          center: myLatlng,
+          zoom: 17,
+          scrollwheel: false,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+        var marker = new google.maps.Marker({
+          position: myLatlng,
+          title:"IIEST, Shibpur"
+        });
+        marker.setMap(map);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
 
 /*----------------------------------------------------*/
 /*	contact form
