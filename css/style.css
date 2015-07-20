@@ -128,7 +128,7 @@ header {
    height: 800px;
    min-height: 500px;
    width: 100%;
-   background: #161415 url("images/bg.jpg") no-repeat top center;
+   background: url("images/bg.jpg") no-repeat top center;
    background-size: cover !important;
 	-webkit-background-size: cover !important;
    text-align: center;
@@ -186,7 +186,7 @@ header .banner-text hr {
 }
 
 .header-overlay {  
-  background: #161415 url(../images/bg-blur.jpg) no-repeat top center;     
+  background: url("images/bg-blur.jpg") no-repeat top center;     
   background-size:  cover!important;
   position: absolute;
   top: 0;
@@ -356,7 +356,7 @@ ul#nav li a:hover {
 /* ------------------------------------------------------------------ */
 
 #about {
-  background: url(../images/2.jpg) no-repeat fixed center center / cover;        
+  background: url("images/2.jpg") no-repeat fixed center center cover;        
   overflow: hidden;
 }
 
@@ -867,7 +867,7 @@ ul#nav li a:hover {
 /* ------------------------------------------------------------------ */
 
 #portfolio {
-   background: url(../images/3.jpg) no-repeat fixed center center / cover;
+   background: url('images/3.jpg') no-repeat fixed center center / cover;
    padding-top: 90px;
    padding-bottom: 60px;
 }

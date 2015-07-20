@@ -66,6 +66,11 @@
 /*----------------------------------------------------*/
 /* Parallax for Header Content
 ------------------------------------------------------*/
+  $('.header-overlay').css({'background': 'url("images/bg-blur.jpg") no-repeat top center'});
+  $('.header-overlay').parallax({imageSrc: 'images/bg.jpg'});
+  $('#about').parallax({imageSrc: 'images/2.jpg'});
+  $('#portfolio').parallax({imageSrc: 'images/3.jpg'});
+
 $(window).scroll(function(e){
   parallax();
 });
